@@ -18,14 +18,39 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
 }
-*/
+
+- (IBAction)sliderChanged:(id)sender
+{
+    self.colorView.backgroundColor =
+    [UIColor colorWithRed:self.redSlider.value
+                    green:self.greenSlider.value
+                     blue:self.blueSlider.value
+                    alpha:1];
+}
+
+- (IBAction)textEntryFinished:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
+- (IBAction)btnAdd:(id)sender
+{
+    [self.delegate colorWasAdded:self.colorView.backgroundColor withName:self.colorName.text];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 @end
