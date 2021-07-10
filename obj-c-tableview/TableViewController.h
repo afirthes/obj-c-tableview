@@ -7,12 +7,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Model.h"
+#import "ColorCreatorViewController.h"
 
 @class Model;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TableViewController : UITableViewController
+@interface TableViewController : UITableViewController<AddingDelegate>
 
 @property (nonatomic, strong) Model *model;
 

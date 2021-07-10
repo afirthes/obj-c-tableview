@@ -7,6 +7,7 @@
 
 #import "TableViewController.h"
 #import "DetailViewController.h"
+#import "ColorCreatorViewController.h"
 
 @interface TableViewController ()
 
@@ -29,6 +30,11 @@
         _model = [[Model alloc] init];
     }
     return _model;
+}
+
+-(void)colorWasAdded:(UIColor *)color withName:(NSString *)colorName  {
+    [self.model addColor:color withName:colorName];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -93,6 +99,13 @@
         UITableViewCell *cell = (UITableViewCell *)sender;
         detailVC.title = cell.textLabel.text;
         detailVC.view.backgroundColor = [self.model.colors objectForKey:cell.textLabel.text];
+    }
+    
+    if([segue.identifier isEqualToString:@"adding"]) {
+        ColorCreatorViewController *addingVC =
+            (ColorCreatorViewController *)segue.destinationViewController;
+        addingVC.title = @"Adding color";
+        addingVC.delegate = self;
     }
 }
 
