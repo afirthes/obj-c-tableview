@@ -16,6 +16,7 @@
 		6A03443C2699B9B500BFEB87 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03443B2699B9B500BFEB87 /* TableViewController.m */; };
 		6A0344422699C38900BFEB87 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0344412699C38900BFEB87 /* Model.m */; };
 		6A0344452699C5DE00BFEB87 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0344442699C5DE00BFEB87 /* DetailViewController.m */; };
+		6A0344482699CC5D00BFEB87 /* ColorCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0344472699CC5D00BFEB87 /* ColorCreatorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		6A0344412699C38900BFEB87 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = ../../../Downloads/TableViewDemo2/TableViewDemo/Model.m; sourceTree = "<group>"; };
 		6A0344432699C5DE00BFEB87 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		6A0344442699C5DE00BFEB87 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		6A0344462699CC5D00BFEB87 /* ColorCreatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorCreatorViewController.h; sourceTree = "<group>"; };
+		6A0344472699CC5D00BFEB87 /* ColorCreatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCreatorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				6A03443B2699B9B500BFEB87 /* TableViewController.m */,
 				6A0344432699C5DE00BFEB87 /* DetailViewController.h */,
 				6A0344442699C5DE00BFEB87 /* DetailViewController.m */,
+				6A0344462699CC5D00BFEB87 /* ColorCreatorViewController.h */,
+				6A0344472699CC5D00BFEB87 /* ColorCreatorViewController.m */,
 			);
 			path = "obj-c-tableview";
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0344482699CC5D00BFEB87 /* ColorCreatorViewController.m in Sources */,
 				6A0344232699B70200BFEB87 /* AppDelegate.m in Sources */,
 				6A0344342699B70400BFEB87 /* main.m in Sources */,
 				6A0344422699C38900BFEB87 /* Model.m in Sources */,
