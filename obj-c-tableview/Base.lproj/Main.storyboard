@@ -26,7 +26,7 @@
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="TableCell"/>
                                 <connections>
-                                    <segue destination="qCU-gU-7P5" kind="show" id="8na-LA-9nW"/>
+                                    <segue destination="qCU-gU-7P5" kind="show" identifier="colorSegue" id="8na-LA-9nW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="-58" y="81"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Cv0-vu-V8E">
             <objects>
-                <viewController id="qCU-gU-7P5" sceneMemberID="viewController">
+                <viewController id="qCU-gU-7P5" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7XB-W0-Wou">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
